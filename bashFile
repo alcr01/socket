@@ -1,0 +1,9 @@
+gcc -o client client.c
+gcc -o server server.c
+
+#Runs the server in the background 
+./server 8000 &
+
+#Runs the clients in the background
+./client localhost 8000 &
+./client localhost 8000 &
